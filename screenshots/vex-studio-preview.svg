@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0e17"/>
+      <stop offset="100%" stop-color="#111927"/>
+    </linearGradient>
+    <linearGradient id="accent-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00d2ff"/>
+      <stop offset="100%" stop-color="#9d4edd"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="700" fill="url(#bg-grad)"/>
+
+  <!-- Window Header / Frame -->
+  <rect x="40" y="30" width="1120" height="640" rx="12" fill="#111927" stroke="#243552" stroke-width="1.5" filter="url(#shadow)"/>
+  
+  <!-- Window Controls -->
+  <circle cx="70" cy="55" r="6" fill="#ff5f56"/>
+  <circle cx="90" cy="55" r="6" fill="#ffbd2e"/>
+  <circle cx="110" cy="55" r="6" fill="#27c93f"/>
+  <text x="140" y="60" fill="#8fa0bc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600">OpenVEXForge Pro — OpenVEX (v0.2.0) &amp; OASIS CSAF 2.0 Studio</text>
+
+  <!-- Top App Navigation / Badges -->
+  <line x1="40" y1="80" x2="1160" y2="80" stroke="#243552" stroke-width="1"/>
+  
+  <!-- Logo & Title -->
+  <rect x="70" y="100" width="54" height="34" rx="6" fill="url(#accent-grad)"/>
+  <text x="80" y="123" fill="#000" font-family="monospace" font-size="16" font-weight="800">VEX</text>
+  <text x="140" y="118" fill="#f0f4fc" font-family="sans-serif" font-size="18" font-weight="700">OpenVEXForge Pro</text>
+  <text x="140" y="134" fill="#8fa0bc" font-family="sans-serif" font-size="12">CISA &amp; NTIA Normative Vulnerability Exploitability Exchange Studio</text>
+
+  <!-- Tags -->
+  <rect x="910" y="104" width="100" height="24" rx="4" fill="rgba(0, 210, 255, 0.15)" stroke="#00d2ff" stroke-width="1"/>
+  <text x="922" y="120" fill="#00d2ff" font-family="sans-serif" font-size="11" font-weight="600">OpenVEX v0.2.0</text>
+  
+  <rect x="1020" y="104" width="90" height="24" rx="4" fill="rgba(0, 230, 118, 0.15)" stroke="#00e676" stroke-width="1"/>
+  <text x="1032" y="120" fill="#00e676" font-family="sans-serif" font-size="11" font-weight="600">10/10 PASS</text>
+
+  <!-- Navigation Tabs -->
+  <rect x="70" y="155" width="130" height="30" rx="6" fill="#00d2ff"/>
+  <text x="85" y="175" fill="#000" font-family="sans-serif" font-size="12" font-weight="700">Statement Builder</text>
+
+  <rect x="210" y="155" width="130" height="30" rx="6" fill="transparent"/>
+  <text x="225" y="175" fill="#8fa0bc" font-family="sans-serif" font-size="12" font-weight="600">OpenVEX JSON-LD</text>
+
+  <rect x="350" y="155" width="130" height="30" rx="6" fill="transparent"/>
+  <text x="365" y="175" fill="#8fa0bc" font-family="sans-serif" font-size="12" font-weight="600">OASIS CSAF 2.0</text>
+
+  <rect x="490" y="155" width="130" height="30" rx="6" fill="transparent"/>
+  <text x="505" y="175" fill="#8fa0bc" font-family="sans-serif" font-size="12" font-weight="600">10-Point Auditor</text>
+
+  <!-- Main Left Card: Statement Form -->
+  <rect x="70" y="200" width="500" height="440" rx="8" fill="#182338" stroke="#243552" stroke-width="1"/>
+  <text x="90" y="230" fill="#f0f4fc" font-family="sans-serif" font-size="14" font-weight="700">Statement Configuration</text>
+
+  <!-- Input Field 1 -->
+  <text x="90" y="260" fill="#8fa0bc" font-family="sans-serif" font-size="11" font-weight="600">VULNERABILITY ID</text>
+  <rect x="90" y="270" width="460" height="34" rx="4" fill="#0e1626" stroke="#243552"/>
+  <text x="102" y="292" fill="#00d2ff" font-family="monospace" font-size="12">CVE-2021-44228 (Log4Shell)</text>
+
+  <!-- Input Field 2 -->
+  <text x="90" y="325" fill="#8fa0bc" font-family="sans-serif" font-size="11" font-weight="600">VEX STATUS</text>
+  <rect x="90" y="335" width="460" height="34" rx="4" fill="#0e1626" stroke="#243552"/>
+  <text x="102" y="357" fill="#00e676" font-family="sans-serif" font-size="12" font-weight="700">not_affected (False-Positive Elimination)</text>
+
+  <!-- Input Field 3 -->
+  <text x="90" y="390" fill="#8fa0bc" font-family="sans-serif" font-size="11" font-weight="600">CISA MANDATORY JUSTIFICATION</text>
+  <rect x="90" y="400" width="460" height="34" rx="4" fill="#0e1626" stroke="#243552"/>
+  <text x="102" y="422" fill="#f0f4fc" font-family="monospace" font-size="11">vulnerable_code_not_in_execute_path</text>
+
+  <!-- Input Field 4 -->
+  <text x="90" y="455" fill="#8fa0bc" font-family="sans-serif" font-size="11" font-weight="600">PACKAGE URL (PURL) BINDINGS</text>
+  <rect x="90" y="465" width="460" height="50" rx="4" fill="#0e1626" stroke="#243552"/>
+  <text x="102" y="485" fill="#a5d6ff" font-family="monospace" font-size="10">pkg:maven/org.apache.logging.log4j/log4j-core@2.14.1</text>
+  <text x="102" y="502" fill="#a5d6ff" font-family="monospace" font-size="10">pkg:npm/enterprise-api-gateway@3.4.0</text>
+
+  <!-- Action Button -->
+  <rect x="90" y="535" width="200" height="36" rx="6" fill="#00d2ff"/>
+  <text x="125" y="558" fill="#000" font-family="sans-serif" font-size="12" font-weight="700">Add Statement (Save)</text>
+
+  <!-- Main Right Card: Live Code & Compliance Viewer -->
+  <rect x="590" y="200" width="530" height="440" rx="8" fill="#060a12" stroke="#243552" stroke-width="1"/>
+  
+  <text x="610" y="230" fill="#8fa0bc" font-family="sans-serif" font-size="12" font-weight="600">CANONICAL OPEN VEX JSON-LD ADVISORY (LIVE)</text>
+  <line x1="590" y1="245" x2="1120" y2="245" stroke="#243552" stroke-width="1"/>
+
+  <g font-family="monospace" font-size="11" fill="#a5d6ff">
+    <text x="610" y="270">{</text>
+    <text x="630" y="290"><tspan fill="#ff7b72">"@context"</tspan>: <tspan fill="#a5d6ff">"https://openvex.dev/ns/v0.2.0"</tspan>,</text>
+    <text x="630" y="310"><tspan fill="#ff7b72">"@id"</tspan>: <tspan fill="#a5d6ff">"https://openvex.dev/docs/public/vex-2026-10-001"</tspan>,</text>
+    <text x="630" y="330"><tspan fill="#ff7b72">"author"</tspan>: <tspan fill="#a5d6ff">"SecOps &lt;secops@enterprise-corp.io&gt;"</tspan>,</text>
+    <text x="630" y="350"><tspan fill="#ff7b72">"role"</tspan>: <tspan fill="#a5d6ff">"vendor"</tspan>,</text>
+    <text x="630" y="370"><tspan fill="#ff7b72">"timestamp"</tspan>: <tspan fill="#a5d6ff">"2026-10-10T20:47:00Z"</tspan>,</text>
+    <text x="630" y="390"><tspan fill="#ff7b72">"version"</tspan>: <tspan fill="#79c0ff">1</tspan>,</text>
+    <text x="630" y="410"><tspan fill="#ff7b72">"statements"</tspan>: [</text>
+    <text x="650" y="430">{</text>
+    <text x="670" y="450"><tspan fill="#ff7b72">"vulnerability"</tspan>: { <tspan fill="#ff7b72">"name"</tspan>: <tspan fill="#7ee787">"CVE-2021-44228"</tspan> },</text>
+    <text x="670" y="470"><tspan fill="#ff7b72">"status"</tspan>: <tspan fill="#7ee787">"not_affected"</tspan>,</text>
+    <text x="670" y="490"><tspan fill="#ff7b72">"justification"</tspan>: <tspan fill="#a5d6ff">"vulnerable_code_not_in_execute_path"</tspan>,</text>
+    <text x="670" y="510"><tspan fill="#ff7b72">"products"</tspan>: [ <tspan fill="#a5d6ff">"pkg:maven/.../log4j-core@2.14.1"</tspan> ]</text>
+    <text x="650" y="530">}</text>
+    <text x="630" y="550">]</text>
+    <text x="610" y="570">}</text>
+  </g>
+
+  <!-- Live Audit Badge inside Code View -->
+  <rect x="610" y="590" width="490" height="34" rx="4" fill="rgba(0, 230, 118, 0.1)" stroke="#00e676" stroke-width="1"/>
+  <text x="625" y="612" fill="#00e676" font-family="sans-serif" font-size="12" font-weight="700">✓ CISA &amp; OpenVEX 10-Point Normative Audit: 10/10 PASS (100% Compliant)</text>
+</svg>
